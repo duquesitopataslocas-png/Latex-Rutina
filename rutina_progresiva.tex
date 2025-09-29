@@ -1,0 +1,188 @@
+% !TeX program = pdflatex
+% Archivo generado para MiKTeX y Visual Studio Code
+\documentclass[12pt]{article}
+
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{colortbl}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{tikz}
+
+\geometry{margin=20mm}
+
+% --- Paleta de colores corporativos ---
+\definecolor{primary}{HTML}{143F6B}
+\definecolor{secondary}{HTML}{F55353}
+\definecolor{textgray}{HTML}{434242}
+\definecolor{accent}{HTML}{FEB139}
+\definecolor{rowshade}{HTML}{F6F9FC}
+
+% --- Tipografía y espaciados ---
+\renewcommand\familydefault{\sfdefault}
+\setlength{\parskip}{0.75em}
+\setlength{\parindent}{0pt}
+\setlength{\arrayrulewidth}{0.5pt}
+\renewcommand{\arraystretch}{1.35}
+
+% --- Formato de encabezados ---
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\color{primary}}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries\color{secondary}}{}{0pt}{}
+
+% --- Hipervínculos discretos ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=secondary,
+  pdfauthor={Entrenador Personal},
+  pdftitle={Plan de Sobrecarga Progresiva}
+}
+
+% --- Cabecera y pie de página ---
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{primary}{Sobrecarga Progresiva}}
+\rhead{\textcolor{textgray}{Semana en curso: \rule{2cm}{0.4pt}}}
+\cfoot{\textcolor{textgray}{\small Revisión: \rule{1cm}{0.4pt}}\,|\,\thepage}
+
+% --- Macros utilitarias ---
+\newcommand{\checkitem}{\textcolor{secondary}{\ding{52}}}
+\newcommand{\tempo}[1]{\textcolor{accent}{\textbf{#1}}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}p{1.5cm}}
+
+\newcommand{\trainingday}[4]{%% nombre, foco, detalle tabla, notas
+  \subsection*{#1 --- #2}
+  \rowcolors{2}{rowshade}{white}
+  \begin{tabularx}{\linewidth}{>{\bfseries\color{primary}}l C C C C C Y}
+    \toprule
+    Ejercicio & Reps & Series & Descanso & Intensidad & Tempo & Notas / Coaching \\
+    \midrule
+    #3
+    \bottomrule
+  \end{tabularx}
+  \vspace{0.5em}
+  \textbf{Recordatorios clave:} #4
+  \vspace{1em}
+}
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[primary!5] (current page.north west) rectangle ([yshift=-8.5cm]current page.north east);
+\end{tikzpicture}
+
+{\Huge\bfseries\color{primary} Plan Maestro de Sobrecarga Progresiva}\par
+{\large\color{textgray}Diseño premium orientado a fuerza, control técnico y adaptación sostenible}
+
+\vspace{1em}
+\textbf{Atleta:} \rule{5cm}{0.4pt} \hfill \textbf{Fecha de inicio:} \rule{4cm}{0.4pt}
+
+\textbf{Duración del bloque:} 8 semanas \hfill \textbf{Evaluación inicial:} \rule{3cm}{0.4pt}
+
+\section*{Resumen del microciclo}
+\begin{tabularx}{\linewidth}{>{\bfseries\color{primary}}lY}
+  Objetivo central & Consolidar patrones básicos y aumentar el tonelaje semanal un 2--5\% respetando un RIR objetivo de 1--2 en multiarticulares.\\
+  Estrategia de progresión & Ajusta primero repeticiones (\textit{micro-progresión}), luego carga externa y finalmente series accesorias según respuesta.\\
+  Calentamiento estratégico & 5 min cardio ligero + movilidad dinámica (cadera, hombro, T-spine) + 2 series de aproximación por ejercicio principal.\\
+  Gestión de fatiga & Controla HRV/VFC, sueño y percepción de estrés (escala 1--5). Implementa descarga en semana 4 reduciendo volumen un 30\%.\\
+  Prioridades técnicas & Tensión intra-abdominal, control excéntrico (\tempo{3 s}) y rangos completos de movimiento supervisados.\\
+\end{tabularx}
+
+\section*{Plan de progresión semanal}
+\rowcolors{2}{rowshade}{white}
+\begin{tabularx}{\linewidth}{>{\bfseries\color{primary}}l *{4}{C} Y}
+  \toprule
+  Semana & \% Carga & RIR guía & Series extra & Ajustes & Observaciones \\
+  \midrule
+  1 & 80\% & 2 & 0 & Técnica y tempo uniforme & Anota fallos técnicos relevantes.\\
+  2 & 82\% & 1--2 & +0 & Añade 1 rep en series finales & Evalúa DOMS y recuperación.\\
+  3 & 84\% & 1 & +1 & Incrementa accesorios prioritarios & Considera variaciones para evitar meseta.\\
+  4 (descarga) & 75\% & 3 & -1 & Volumen -30\% & Reenfoca en movilidad y sueño.\\
+\bottomrule
+\end{tabularx}
+
+\section*{Distribución semanal personalizada}
+\trainingday{Lunes}{Tren superior dominante de tracción}{%
+  Pull Up (lastre gradual) & 5--6 & 3 & 3 min & 80\% 1RM & \tempo{2-1-1-0} & Primer repeticiones explosivas, ajusta lastre según RIR.\\
+  Dips en paralelas & 5--6 & 3 & 3 min & 80\% & \tempo{2-0-1-0} & Mantén escápulas deprimidas; evita flexión lumbar.\\
+  Remo con barra & 5--6 & 3 & 2 min & 80\% & \tempo{2-0-1-1} & Barra pegada al torso, pausa isométrica de 1 s.\\
+  Press militar & 5--6 & 3 & 2 min & 80\% & \tempo{2-0-1-0} & Bloqueo sin hiperextender; usa cinturón solo si es necesario.\\
+  Curl de bíceps barra & 5--6 & 3 & 2 min & 80\% & \tempo{3-0-1-0} & Alterna con mancuernas semana par.\\
+  Trabajo complementario (manguitos + core) & 12 & 2 & 60 s & 60\% & Variable & Face pull + plancha lateral 2x45 s por lado.\\
+}{Respiración nasal en descansos, grabar la última serie para feedback técnico.}
+
+\trainingday{Martes}{Tren inferior dominante de rodilla}{%
+  Sentadilla trasera alta & 5--6 & 3 & 3 min & 80\% 1RM & \tempo{3-1-1-0} & Profundidad controlada, usa cuña de talón si lo requiere la movilidad.\\
+  Peso muerto rumano & 5--6 & 3 & 3 min & 80\% & \tempo{3-1-1-1} & Dorsales activos, cadera atrás, barra rozando piernas.\\
+  Curl femoral máquina & 8--10 & 2 & 2 min & 60\% & \tempo{2-0-1-1} & Pausa en la contracción para enfatizar isquios.\\
+  Extensión de cuádriceps & 8--10 & 2 & 2 min & 60\% & \tempo{2-1-1-1} & Incrementa la excéntrica +1 s cuando completes 10 reps sólidas.\\
+  Aductores de cadera & 8--10 & 2 & 2 min & 60\% & \tempo{2-0-1-1} & Controla la pelvis neutra, respira profundo.\\
+  Abductores de cadera & 8--10 & 2 & 3 min & 60\% & \tempo{2-0-2-0} & Combina con caminatas laterales con banda.\\
+  Core antirotacional (Pallof) & 12--15 & 3 & 60 s & 65\% & \tempo{2-0-2-0} & Alterna lados, enfoca en estabilidad.\\
+}{Finaliza con liberación miofascial de cuádriceps y glúteos (2 min por zona).}
+
+\trainingday{Jueves}{Tren superior dominante de empuje}{%
+  Pull Up supinas & 5--6 & 3 & 3 min & 80\% & \tempo{2-1-1-0} & Cambia agarre para enfatizar bíceps; straps opcionales.\\
+  Dips lastrados & 5--6 & 3 & 3 min & 80\% & \tempo{2-0-1-0} & Progresión: +1 rep antes de aumentar carga.\\
+  Remo con mancuerna apoyado & 5--6 & 3 & 2 min & 80\% & \tempo{2-0-1-1} & Escápula libre, tronco estable.\\
+  Press militar mancuernas & 5--6 & 3 & 2 min & 80\% & \tempo{2-0-1-0} & Alterna sentado/de pie cada semana.\\
+  Curl bíceps inclinado & 5--6 & 3 & 2 min & 80\% & \tempo{3-0-1-0} & No bloquear codos, enfatizar estiramiento.\\
+  Trabajo accesorio (hombro + core) & 12--15 & 2 & 60 s & 60\% & Variable & YTW con banda + plancha con toque de hombro 2x15.\\
+}{Enfatiza rotación externa y control escapular previo a press.}
+
+\trainingday{Viernes}{Tren inferior dominante de cadera}{%
+  Sentadilla frontal & 5--6 & 3 & 3 min & 80\% & \tempo{3-1-1-0} & Torso erguido, codos arriba, enfoque en dorsales.\\
+  Peso muerto convencional & 5--6 & 3 & 3 min & 80\% & \tempo{2-0-1-1} & Usa encoder/app para medir velocidad media.\\
+  Curl femoral sentado & 8--10 & 2 & 2 min & 60\% & \tempo{2-0-1-1} & Pausa de 2 s en contracción.\\
+  Extensión de cuádriceps unilateral & 8--10 & 2 & 2 min & 60\% & \tempo{2-1-1-1} & Ajusta respaldo para pelvis neutra.\\
+  Aductores de cadera (polea) & 8--10 & 2 & 2 min & 60\% & \tempo{2-0-1-1} & Control excéntrico, sin impulso.\\
+  Abductores de cadera (mini-band) & 8--10 & 2 & 3 min & 60\% & \tempo{2-0-2-0} & Mantén tensión constante.\\
+  Trabajo metabólico (Assault Bike) & 8 rondas & 1 & 45 s & 70\% HRmax & -- & 15 s intenso / 30 s suave.\\
+}{Realiza estiramientos de flexores de cadera y respiración diafragmática post sesión.}
+
+\section*{Indicadores diarios y personalización}
+\begin{tabularx}{\linewidth}{>{\bfseries\color{primary}}lCCCCCC}
+  \toprule
+  Día & Sueño (h) & Energía (1--5) & Estrés (1--5) & Dolor (1--5) & Peso (kg) & RPE sesión \\
+  \midrule
+  Lunes & & & & & & \\
+  Martes & & & & & & \\
+  Jueves & & & & & & \\
+  Viernes & & & & & & \\
+  Sábado (opc.) & & & & & & \\
+  Domingo (opc.) & & & & & & \\
+  \bottomrule
+\end{tabularx}
+
+\section*{Checklist previo a la sesión}
+\begin{itemize}[leftmargin=2.2em]
+  \item[\checkitem] Nutrición: 1.6--2.2 g/kg de proteína + carbohidratos de alta digestibilidad pre y post sesión.
+  \item[\checkitem] Hidratación: 500 ml agua + electrolitos 60 min antes.
+  \item[\checkitem] Monitoreo: revisar ritmo cardiaco en reposo y estado articular.
+  \item[\checkitem] Preparación mental: 3 respiraciones diafragmáticas + repaso de objetivos técnicos.
+  \item[\checkitem] Recuperación: programar sueño de 7--9 h y movilidad ligera al final del día.
+\end{itemize}
+
+\section*{Notas estratégicas}
+\begin{tabularx}{\linewidth}{>{\bfseries\color{primary}}lY}
+  Priorización semanal & Selecciona 1 levantamiento estrella por día y registra su velocidad media y RPE para ajustar carga.\\
+  Complementos opcionales & Trabajo aeróbico zona 2 (20 min) los miércoles + movilidad específica de cadera/torácica.\\
+  Observaciones del entrenador & _________________________________________________________________________________________\\
+   & _________________________________________________________________________________________\\
+\end{tabularx}
+
+\vfill
+\centering{\small \textcolor{textgray}{Plan elaborado por: \rule{5cm}{0.4pt} \hspace{1cm} Firma del atleta: \rule{4cm}{0.4pt}}}
+
+\end{document}
