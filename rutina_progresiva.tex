@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\geometry{margin=1in}
+
+% Colores corporativos
+\definecolor{primary}{HTML}{1F4E79}
+\definecolor{secondary}{HTML}{00A0B0}
+\definecolor{textgray}{HTML}{444444}
+\definecolor{accent}{HTML}{E67E22}
+
+\renewcommand\familydefault{\sfdefault}
+\setlength{\parskip}{0.6em}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\Large\bfseries\color{primary}}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries\color{secondary}}{}{0pt}{}
+
+% Formato de tabla personalizado
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\tableheader}[1]{\textbf{\textcolor{primary}{#1}}}
+
+\begin{document}
+
+{\Huge\bfseries\color{primary} Plan de Sobrecarga Progresiva}\par
+{\large\color{textgray}Diseñado para consolidar fuerza, técnica y control del volumen semanal}
+
+\vspace{1em}
+\textbf{Duración sugerida:} 8 semanas (ajustable) \hfill \textbf{Atleta:} \rule{4cm}{0.4pt}
+
+\vspace{0.5em}
+\textbf{Bloque actual:} Fuerza base \hfill \textbf{Fecha de inicio:} \rule{3cm}{0.4pt}
+
+\section*{Parámetros globales}
+\begin{tabularx}{\linewidth}{>{\bfseries\color{primary}}lY}
+Objetivo semanal & Incrementar el tonelaje total un 2--5\% manteniendo la técnica dentro de un RIR 2. \\
+Rango de RIR & Principales (compuestos): 1--2 RIR. Accesorios: 2--3 RIR. \\
+Estrés acumulado & Monitorear calidad del sueño y variabilidad de la frecuencia cardiaca (VFC) para ajustar volumen. \\
+Warm-up sugerido & 5 min movilidad dinámica + 2 series de aproximación por ejercicio principal. \\
+Velocidad de ejecución & Controlada (2-0-1-0) en tirones y empujes; (3-0-1-0) en trabajos de cadena posterior. \\
+\end{tabularx}
+
+\vspace{1em}
+\section*{Lineamientos de progresión}
+\begin{enumerate}[label=\textbf{Semana \arabic*:}, leftmargin=1.5cm]
+  \item Mantén la carga base (80\% 1RM) y consolida el patrón. Ajusta técnica y rango de movimiento completo.
+  \item Aumenta un 2\% la carga o añade una repetición por serie según tolerancia. Controla la fatiga subjetiva (RPE \textless{}8).
+  \item Incrementa volumen en accesorios (añade 1 serie o intensifica el tempo). Revisa recuperación de cadera y hombros.
+  \item Semana de descarga activa: reduce volumen en 30\% manteniendo intensidades para consolidar adaptaciones.
+\end{enumerate}
+
+\section*{Distribución semanal}
+\subsection*{Lunes --- Tren superior (dominadas y empujes)}
+\begin{tabularx}{\linewidth}{>{\bfseries\color{primary}}l*{5}{>{\centering\arraybackslash}p{1.6cm}}Y}
+\toprule
+Ejercicio & Reps & Series & Descanso & Intensidad & Tempo & Notas/Enfoque \\
+\midrule
+Pull Up & 5--6 & 3 & 3 min & 80\% 1RM estim. & 2-1-1-0 & Inicia cada serie con agarre neutro; añade lastre cuando completes 3x6. \\
+Dips en paralelas & 5--6 & 3 & 3 min & 80\% & 2-0-1-0 & Mantén escápulas deprimidas; progresar con cadena o chaleco. \\
+Remo con barra & 5--6 & 3 & 2 min & 80\% & 2-0-1-1 & Prioriza isometría final de 1 s para activar dorsales. \\
+Press militar & 5--6 & 3 & 2 min & 80\% & 2-0-1-0 & Bloqueo fuerte sin hiperextender columna lumbar. \\
+Curl de bíceps & 5--6 & 3 & 2 min & 80\% & 3-0-1-0 & Alterna barra recta y mancuernas semana a semana. \\
+Trabajo complementario & 10--12 & 2 & 45 s & 60\% & Variable & Cuff work de rotadores externos + plancha lateral 2x45 s por lado. \\
+\bottomrule
+\end{tabularx}
+
+\subsection*{Martes --- Tren inferior (dominante de rodilla)}
+\begin{tabularx}{\linewidth}{>{\bfseries\color{primary}}l*{5}{>{\centering\arraybackslash}p{1.6cm}}Y}
+\toprule
+Ejercicio & Reps & Series & Descanso & Intensidad & Tempo & Notas/Enfoque \\
+\midrule
+Sentadilla alta & 5--6 & 3 & 3 min & 80\% 1RM & 3-1-1-0 & Prioriza profundidad controlada; usa cinturón solo en última serie. \\
+Peso muerto rumano & 5--6 & 3 & 3 min & 80\% & 3-1-1-1 & Mantén dorsales activos, barra pegada al cuerpo. \\
+Curl femoral & 8--10 & 2 & 2 min & 60\% & 2-0-1-1 & Añade pausa en la contracción para enfatizar isquios. \\
+Extensión de cuádriceps & 8--10 & 2 & 2 min & 60\% & 2-1-1-1 & Progresión: ralentiza fase excéntrica +1 s. \\
+Aductores de cadera & 8--10 & 2 & 2 min & 60\% & 2-0-1-1 & Enfócate en estabilidad pélvica y respiración diafragmática. \\
+Abductores de cadera & 8--10 & 2 & 3 min & 60\% & 2-0-2-0 & Combina con caminatas de banda lateral. \\
+Core antirotacional & 12--15 & 3 & 60 s & 65\% & 2-0-2-0 & Press Pallof unilateral, alternar lados. \\
+\bottomrule
+\end{tabularx}
+
+\subsection*{Jueves --- Tren superior (dominadas y empujes)}
+\begin{tabularx}{\linewidth}{>{\bfseries\color{primary}}l*{5}{>{\centering\arraybackslash}p{1.6cm}}Y}
+\toprule
+Ejercicio & Reps & Series & Descanso & Intensidad & Tempo & Notas/Enfoque \\
+\midrule
+Pull Up (variación supina) & 5--6 & 3 & 3 min & 80\% & 2-1-1-0 & Cambia agarre a supino para enfatizar bíceps; usa straps si la fatiga de agarre limita. \\
+Dips lastrados & 5--6 & 3 & 3 min & 80\% & 2-0-1-0 & Ajusta lastre según RIR 2. \\
+Remo con mancuerna apoyado & 5--6 & 3 & 2 min & 80\% & 2-0-1-1 & Concéntrate en contracción escapular y estabilidad de tronco. \\
+Press militar con mancuernas & 5--6 & 3 & 2 min & 80\% & 2-0-1-0 & Alterna posición sentada y de pie para trabajar estabilidad. \\
+Curl de bíceps inclinado & 5--6 & 3 & 2 min & 80\% & 3-0-1-0 & Mantén codos fijos; no bloquees completamente. \\
+Trabajo accesorio & 12--15 & 2 & 45 s & 60\% & Variable & Facepull + plancha con toque de hombros 2x15. \\
+\bottomrule
+\end{tabularx}
+
+\subsection*{Viernes --- Tren inferior (dominante de cadera)}
+\begin{tabularx}{\linewidth}{>{\bfseries\color{primary}}l*{5}{>{\centering\arraybackslash}p{1.6cm}}Y}
+\toprule
+Ejercicio & Reps & Series & Descanso & Intensidad & Tempo & Notas/Enfoque \\
+\midrule
+Sentadilla frontal & 5--6 & 3 & 3 min & 80\% & 3-1-1-0 & Mantén torso erguido; enfatiza dorsales. \\
+Peso muerto convencional & 5--6 & 3 & 3 min & 80\% & 2-0-1-1 & Revisa velocidad de barra con encoder o aplicación móvil. \\
+Curl femoral & 8--10 & 2 & 2 min & 60\% & 2-0-1-1 & Variante sentado para equilibrar cadera. \\
+Extensión de cuádriceps & 8--10 & 2 & 2 min & 60\% & 2-1-1-1 & Ajusta respaldo para mantener neutra la pelvis. \\
+Aductores de cadera & 8--10 & 2 & 2 min & 60\% & 2-0-1-1 & Añade pausa de 2 s en el pico de contracción. \\
+Abductores de cadera & 8--10 & 2 & 3 min & 60\% & 2-0-2-0 & Coloca mini-band en rodillas durante calentamiento previo. \\
+Trabajo metabólico & 8 rondas & 1 & 45 s & 70\% HRmax & -- & Assault bike: 15 s fuerte / 30 s suave. \\
+\bottomrule
+\end{tabularx}
+
+\section*{Monitoreo y personalización}
+\begin{tabularx}{\linewidth}{>{\bfseries\color{primary}}lY}
+Biomarcadores & Peso matutino, calidad del sueño (1--5), estrés percibido (1--5), VFC semanal. \\
+Checklist pre-sesión & Hidratación: 500 ml agua + electrolitos; movilidad específica de hombro/cadera; activación core-glúteo. \\
+Recomendaciones nutricionales & 1.6--2.2 g/kg proteína, carbohidratos alrededor de la sesión (1 g/kg pre, 1 g/kg post). \\
+Notas del entrenador & ________________________________________________________________________________ \\
+ & ________________________________________________________________________________ \\
+\end{tabularx}
+
+\vfill
+\centering{\small \textcolor{textgray}{Plan elaborado por: \rule{4cm}{0.4pt} \hspace{1cm} Fecha: \rule{3cm}{0.4pt}}}
+
+\end{document}
